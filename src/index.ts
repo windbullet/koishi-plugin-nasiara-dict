@@ -62,7 +62,7 @@ export function apply(ctx: Context, config: Config) {
               await element.click()
             }
           } else {
-            let element = await page.$(`#app > div.section.tac.xlang-sec > div.query-results > div > div:nth-child(2) > div > div.result-header > div`)
+            let element = await page.$(`#app > div.section.tac.xlang-sec > div.query-results > div > div:nth-child(2) > div > div.result-header > div.conjugate`)
             await element.click()
           }
         }
